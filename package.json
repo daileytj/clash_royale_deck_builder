@@ -1,0 +1,20 @@
+{
+  "name": "clash_royale_deck_builder",
+  "version": "1.0.0",
+  "description": "Create The Ultimate Clash Royale Deck",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/daileytj/clash_royale_deck_builder.git"
+  },
+  "author": "Thomas Dailey",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/daileytj/clash_royale_deck_builder/issues"
+  },
+  "homepage": "https://github.com/daileytj/clash_royale_deck_builder#readme"
+}
