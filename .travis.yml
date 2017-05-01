@@ -4,6 +4,6 @@ deploy:
   provider: heroku
   api_key:
     secure: 7740a219-7774-4127-9429-8030c7fe3e70
-  app:
+  app: clash-royale-deck-builder
   on:
     repo: daileytj/clash_royale_deck_builder
