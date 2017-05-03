@@ -16,6 +16,14 @@ module.exports = {
           exclude: /(node_modules)/,
           loader: 'babel',
         },
+        {
+          test: /\.(gif|jpe?g|png|ico)$/,
+          loader: 'url-loader?limit=25000'
+        },
+        {
+          test: /\.(otf|eot|svg|ttf|woff|woff2).*$/,
+          loader: 'url-loader?limit=25000'
+        }
       ]
     }
 };

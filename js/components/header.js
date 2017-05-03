@@ -4,6 +4,7 @@ import {Router, Route, Link, hashHistory} from 'react-router';
 import Home from '../views/home';
 import Build from '../views/build';
 import Decks from '../views/decks';
+import clashRoyaleLogo from '../../images/clash-royale-logo.png';
 
 class Header extends React.Component {
     constructor(props){
@@ -14,7 +15,7 @@ class Header extends React.Component {
       return (
           <nav>
             <li><Link to = "/">
-              <img src = 'http://cdn.supercell.com/supercell.com/170502141104/all/themes/supercell/img/parallax/cr_logo@2x.png'/>
+              <img src = {clashRoyaleLogo} alt = "Clash Royale Logo" />
               <h1> Deck Builder </h1>
             </Link></li>
             <li><Link to = "/build" activeClassName = "active">BUILD</Link></li>
