@@ -10,7 +10,7 @@ class Footer extends React.Component{
   render() {
     return (
       <footer>
-        <a href = "https://www.github.com/daileytj"><img src = {githubLogo} alt = "GitHub Logo" /></a>
+        <a href = "https://github.com/daileytj/clash_royale_deck_builder"><img src = {githubLogo} alt = "GitHub Logo" /></a>
       </footer>
     )
   }
