@@ -1,18 +1,19 @@
 import React from 'react';
 import {connect} from 'react-redux';
 
-class Home extends React.Component{
+class Deck extends React.Component {
   constructor(props){
     super(props);
   }
 
-  render() {
+  render(props){
     return(
-      <div>
-        <h1>Home</h1>
+      <div className = "deck">
+        A Deck
       </div>
     )
   }
+
 }
 
-export default connect()(Home);
+export default connect()(Deck);

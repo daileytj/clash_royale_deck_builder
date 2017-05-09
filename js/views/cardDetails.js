@@ -1,13 +1,13 @@
 import React from 'react';
 import {connect} from 'react-redux';
 
-class Card extends React.Component {
+class CardDetails extends React.Component {
   constructor(props){
     super(props);
   }
 
   render(props){
-    const{ card, image, cardName, idName, rarity, type, name, description, arena, elixerCost } = this.props;
+    const{ image, cardName, idName, rarity, type, name, description, arena, elixerCost } = this.props;
 
     return(
       <div className = "card">
@@ -23,6 +23,7 @@ class Card extends React.Component {
       </div>
     )
   }
+
 }
 
-export default connect()(Card);
+export default connect()(CardDetails);

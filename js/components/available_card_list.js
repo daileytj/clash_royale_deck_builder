@@ -1,20 +1,13 @@
 import React from 'react';
 import {connect} from 'react-redux';
-import * as actions from '../actions/index';
+import Card from './card';
 
 class AvailableCardList extends React.Component{
-  constructor(props){
-    super(props);
-  }
-
-  componentDidMount(){
-
-  }
-
+  
   render(){
-
     return(
-      <div>
+      <div className = "availableCardList">
+        {this.props.cards.map((card,i) => <Card {...this.props} key = {i} i = {i} card = {card}/>)}
       </div>
     )
   }

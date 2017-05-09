@@ -20,6 +20,7 @@ class Header extends React.Component {
             </Link></li>
             <li><Link to = "/build" activeClassName = "active">BUILD</Link></li>
             <li><Link to = "/decks" activeClassName = "active">DECKS</Link></li>
+            <li><Link to = "/cards" activeClassName = "active">ALL CARDS</Link></li>
           </nav>
         );
     }
