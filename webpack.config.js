@@ -1,5 +1,4 @@
 var path = require('path');
-
 var webpack = require('webpack');
 
 module.exports = {
@@ -17,12 +16,12 @@ module.exports = {
           loader: 'babel',
         },
         {
-          test: /\.(gif|jpe?g|png|ico)$/,
-          loader: 'file-loader'
+          test: /\.(gif|jpe?g|png|ico|jpg)$/,
+          loader: 'url-loader?limit=2500000'
         },
         {
           test: /\.(otf|eot|svg|ttf|woff|woff2).*$/,
-          loader: 'file-loader'
+          loader: 'url-loader?limit=2500000'
         }
       ]
     }
