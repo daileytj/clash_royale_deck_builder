@@ -1,13 +1,213 @@
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 h1, h2, h3 {
-    font-family: 'Roboto Slab', serif;
+  font-family: 'Roboto Slab', serif;
+}
+
+.main {
+  position: absolute;
+}
+
+
+/*-------------------------------------------------------------------------*/
+
+
+/*------------------------------HEADER-------------------------------------*/
+
+
+/*-------------------------------------------------------------------------*/
+
+nav {
+  background-color: #488BF4;
+  width: 100%;
+  height: 100px;
+  position: fixed;
+  z-index: 1;
+  opacity: .9;
+}
+
+.app-heading {
+  height: 100px;
+  float: left;
+  width: 60%;
+}
+
+.clash-logo {
+  float: left;
+  height: 80px;
+  margin: 10px;
+  width: auto;
+}
+
+nav>h1, .nav-link {
+  color: #FFFFFF;
+}
+
+nav>h1 {
+  display: inline-block;
+  float: left;
+}
+
+nav li {
+  display: inline-block;
+  line-height: 100px;
+  list-style: none;
+}
+
+.nav-wrapper li {
+  padding: 0 20px;
+}
+
+.nav-wrapper {
+  float: right;
+}
+
+.nav-link {
+  text-decoration: none;
+}
+
+nav:after {
+  display: block;
+  content: "";
+  clear: both;
+}
+
+
+/*-------------------------------------------------------------------------*/
+
+
+/*----------------All-Pages-Pushed-Down-And-Fill-Content-Box---------------*/
+
+
+/*-------------------------------------------------------------------------*/
+
+.available-card-list {
+  padding-top: 100px;
+}
+
+.build-page, .decks-page {
+  padding-top: 100px;
+  height: 800px;
+}
+
+.build-page h1, .decks-page h1 {
+  color: #000000;
+}
+
+
+/*-------------------------------------------------------------------------*/
+
+
+/*------------------------------Home-Page----------------------------------*/
+
+
+/*-------------------------------------------------------------------------*/
+
+.home-page-hero-img-parallax {
+  background-image: url("https://clashroyale.com/uploaded-images/October_thumb.jpg?mtime=20161014060704");
+  height: 600px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.hero-text-wrapper {
+  position: relative;
+  top: 300px;
+}
+
+.hero-header {
+  text-align: center;
+  background: rgba(68, 142, 242, .8);
+  width: 70%;
+  margin: 0 auto;
+  color: #ffffff;
+}
+
+.hero-button {
+  margin: 50px auto 0 auto;
+  display: block;
+  width: 170px;
+  font-size: 22px;
+  height: 36px;
+  font-weight: bold;
+  color: #ffffff;
+  border-radius: 10px;
+  background-color: rgba(68, 142, 242, .8);
+  border-color: #949494;
+  outline: none;
+}
+
+.home-page-content-button{
+  margin-top: 0px;
+  margin-bottom: 15px;
+}
+
+.home-page-content-wrapper{
+  width:90%;
+  margin: 0 auto;
+}
+
+.home-page-content-wrapper h2{
+  color:#FF9C00;
+  margin-bottom: 15px;
+}
+
+.home-page-content-wrapper p{
+  margin-bottom: 10px;
+}
+
+/*-------------------------------------------------------------------------*/
+
+
+/*------------------------------Build-Page---------------------------------*/
+
+
+/*-------------------------------------------------------------------------*/
+
+
+/*-------------------------------------------------------------------------*/
+
+
+/*------------------------------Decks-Page---------------------------------*/
+
+
+/*-------------------------------------------------------------------------*/
+
+
+/*-------------------------------------------------------------------------*/
+
+
+/*------------------------------FOOTER-------------------------------------*/
+
+
+/*-------------------------------------------------------------------------*/
+
+footer {
+  height: 60px;
+  position: relative;
+  bottom: 0px;
+  width: 100%;
+  background-color: #000000;
+  border-top: 10px solid #488BF4;
+}
+
+footer a {
+  text-decoration: none;
+}
+
+footer img {
+  display: block;
+  height: 40px;
+  width: auto;
+  margin: 5px auto;
 }

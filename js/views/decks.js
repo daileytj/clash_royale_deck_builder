@@ -8,7 +8,7 @@ class Decks extends React.Component{
 
   render() {
     return(
-      <div>
+      <div className = "decks-page">
         <h1>Decks</h1>
       </div>
     )

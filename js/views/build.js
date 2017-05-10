@@ -8,7 +8,7 @@ class Build extends React.Component{
 
   render() {
     return(
-      <div>
+      <div className = "build-page">
         <h1>Build</h1>
       </div>
     )

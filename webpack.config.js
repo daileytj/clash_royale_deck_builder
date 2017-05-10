@@ -18,11 +18,11 @@ module.exports = {
         },
         {
           test: /\.(gif|jpe?g|png|ico)$/,
-          loader: 'url-loader?limit=25000'
+          loader: 'file-loader'
         },
         {
           test: /\.(otf|eot|svg|ttf|woff|woff2).*$/,
-          loader: 'url-loader?limit=25000'
+          loader: 'file-loader'
         }
       ]
     }

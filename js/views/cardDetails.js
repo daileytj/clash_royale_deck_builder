@@ -11,6 +11,7 @@ class CardDetails extends React.Component {
 
     return(
       <div className = "card">
+        <p>I'm a card</p>
         <p className = "hidden cardName">{card.cardName}</p>
         <p className = "hidden idName">{card.idName}</p>
         <p className = "hidden rarity">{card.rarity}</p>
