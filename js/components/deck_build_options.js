@@ -14,9 +14,9 @@ class DeckBuildOptions extends React.Component{
         <button className = "save-deck-button">Save Deck</button>
           <form>
             <fieldset>
-              <label className = "deck-title-label" name = "title" for = "title">Title</label>
+              <label className = "deck-title-label" name = "title">Title</label>
               <input className = "deck-title-input" type = "text" placeholder = "My Ultimate Deck" required/>
-              <label className = "deck-strategy-label" name = "strategy" for = "strategy">Strategy</label>
+              <label className = "deck-strategy-label" name = "strategy">Strategy</label>
               <textarea className = "deck-strategy-input" type = "text" placeholder = "The Ultimate Deck requires little strategy. Deploy your troops and watch the towers fall... Collect Crowns... Claim Victory!" required/>
             </fieldset>
           </form>

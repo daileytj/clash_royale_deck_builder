@@ -10,7 +10,7 @@ class DeckBuilder extends React.Component{
 
   render(){
 
-    const testCard = [{
+    const testDeck = [{
     "_id": "58d176a56d804500104b1248",
     "idName": "arrows",
     "rarity": "Common",
@@ -110,29 +110,29 @@ class DeckBuilder extends React.Component{
 
     return(
       <div className = "deck-builder-container">
-        <div className = "card-container deck-builder-deck slot1">
-          <Card className = "blank" card = {testCard[0]}/>
+        <div className = "blank card-container deck-builder-deck slot1">
+          <Card card = {testDeck[0]}/>
         </div>
-        <div className = "card-container deck-builder-deck slot2">
-          <Card className = "blank" card = {testCard[1]}/>
+        <div className = "blank card-container deck-builder-deck slot2">
+          <Card card = {testDeck[1]}/>
         </div>
-        <div className = "card-container deck-builder-deck slot3">
-          <Card className = "blank" card = {testCard[2]}/>
+        <div className = "blank card-container deck-builder-deck slot3">
+          <Card card = {testDeck[2]}/>
         </div>
-        <div className = "card-container deck-builder-deck slot4">
-          <Card className = "blank" card = {testCard[3]}/>
+        <div className = "blank card-container deck-builder-deck slot4">
+          <Card card = {testDeck[3]}/>
         </div>
-        <div className = "card-container deck-builder-deck slot5">
-          <Card className = "blank" card = {testCard[4]}/>
+        <div className = "blank card-container deck-builder-deck slot5">
+          <Card card = {testDeck[4]}/>
         </div>
-        <div className = "card-container deck-builder-deck slot6">
-          <Card className = "blank" card = {testCard[5]}/>
+        <div className = "blank card-container deck-builder-deck slot6">
+          <Card card = {testDeck[5]}/>
         </div>
-        <div className = "card-container deck-builder-deck slot7">
-          <Card className = "blank" card = {testCard[6]}/>
+        <div className = "blank card-container deck-builder-deck slot7">
+          <Card card = {testDeck[6]}/>
         </div>
-        <div className = "card-container deck-builder-deck slot8">
-          <Card className = "blank" card = {testCard[7]}/>
+        <div className = "blank card-container deck-builder-deck slot8">
+          <Card card = {testDeck[7]}/>
         </div>
       </div>
     )
