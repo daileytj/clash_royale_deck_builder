@@ -12,10 +12,10 @@ class Build extends React.Component{
   render() {
     return(
       <div className = "build-page">
-        <h1>Build</h1>
-        <DeckBuilder />
-        <DeckBuildOptions />
-        <AvailableCardList />
+        <div className = "deck-builder-and-options-container">
+          <DeckBuilder />
+          <DeckBuildOptions />
+        </div>
       </div>
     )
   }

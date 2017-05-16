@@ -32,6 +32,10 @@ h1, h2, h3 {
   display:none;
 }
 
+.active{
+  color: #ff9c00;
+}
+
 nav {
   background-color: #488BF4;
   width: 100%;
@@ -202,7 +206,87 @@ nav:after {
 
 
 /*-------------------------------------------------------------------------*/
+.deck-builder-and-options-container{
+  width: 90%;
+  margin: 20px auto;
+  border: 5px solid black;
+  border-radius: 10px;
+  padding: 20px;
+}
 
+.deck-builder-options-wrapper {
+    text-align: center;
+    margin: 20px auto;
+}
+
+.random-button{
+    width: 300px;
+    height: 50px;
+    border-radius: 10px;
+    font-size: 26px;
+    background-color: rgb(208, 1, 1);
+    color: white;
+}
+
+.save-deck-button{
+  width: 300px;
+  height: 50px;
+  border-radius: 10px;
+  font-size: 26px;
+  background-color: #FF9C00;
+  color: white;
+}
+
+fieldset {
+    margin-top: 15px;
+    border: 5px solid #5B97F5;
+    border-radius: 10px;
+    color: #ff9c00;
+}
+
+.deck-title-label,.deck-title-input,.deck-strategy-label,.deck-strategy-input,.save-deck-button,.random-button{
+  outline:none;
+}
+
+.deck-title-label{
+    display: block;
+    margin: 20px auto;
+    font-size: 26px;
+}
+
+.deck-title-input {
+    width: 80%;
+    display: block;
+    margin: 10px auto 25px auto;
+    line-height: 26px;
+    padding: 3px 15px;
+    font-size: 18px;
+    border-radius: 4px;
+    border-color: #FF9C00;
+}
+
+.deck-strategy-label{
+  display: block;
+  margin: 20px auto;
+  font-size: 26px;
+}
+
+.deck-strategy-input {
+    width: 80%;
+    display: block;
+    border: 2px solid #ff9c00;
+    margin: 5px auto 25px auto;
+    line-height: 22px;
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 4px;
+    height: 300px;
+    overflow: scroll;
+}
+
+.card-container {
+    display: inline;
+}
 
 /*-------------------------------------------------------------------------*/
 
@@ -220,28 +304,21 @@ nav:after {
 
 /*-------------------------------------------------------------------------*/
 
-.available-card-list{
+  .available-card-list{
     width: 90%;
     padding-top: 150px;
     margin: 0 auto;
   }
 
   .card{
-    display: block;
+    display: inline-block;
     width: 25%;
-    float: left;
   }
 
   .card-image{
     width: 100%;
     padding: 10px;
   }
-
-.available-card-list:after, .available-card-list:before{
-  clear:both;
-  display: block;
-  content: "";
-}
 
 /*-------------------------------------------------------------------------*/
 
@@ -313,6 +390,14 @@ footer img {
     .home-page-content-wrapper {
     margin-top: 50px;
   }
+
+    .random-button{
+      margin: 15px auto;
+    }
+
+    .save-deck-button{
+      margin: 0 auto 20px auto;
+    }
 }
 
 @media only screen and (max-width: 600px) {
