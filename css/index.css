@@ -113,13 +113,15 @@ nav:after {
 
 /*-------------------------------------------------------------------------*/
 
-.available-card-list, .build-page {
+.available-card-list, .build-page{
   padding-top: 100px;
 }
 
-.decks-page {
-  padding-top: 100px;
-  height: 800px;
+.decks-page{
+  padding-top: 125px;
+  padding-bottom: 25px;
+  width: 90%;
+  margin: 0 auto;
 }
 
 .build-page h1, .decks-page h1 {
@@ -342,6 +344,44 @@ fieldset {
 
 /*-------------------------------------------------------------------------*/
 
+.deck {
+    width: 48%;
+    display: inline-block;
+    margin: 1%;
+    border: 5px solid #5B97F5;
+    border-radius: 10px;
+}
+
+.deck:hover{
+  border-color: #ff9c00;
+  transform: translateX(2px);
+  transform: translateY(2px);
+  transition-property: all;
+  transition-delay: 0s;
+  transition-duration: .2s;
+  transition-property: all;
+  transition-timing-function: ease-in-out;
+}
+
+.deck>h2 {
+    text-align: center;
+    margin: 10px auto 5px auto;
+}
+
+.deck>h3 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.deck-strategy {
+    width: 90%;
+    margin: 0 auto 15px auto;
+    padding: 5px;
+    height: 100px;
+    overflow: scroll;
+}
+
+
 /*-------------------------------------------------------------------------*/
 
 
@@ -443,6 +483,15 @@ footer img {
 
     .save-deck-button{
       margin: 0 auto 20px auto;
+    }
+
+    .deck{
+      width: 100%;
+      margin: 10px auto;
+    }
+
+    .deck-strategy{
+      height: 150px;
     }
 }
 
