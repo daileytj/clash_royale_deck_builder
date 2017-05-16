@@ -106,9 +106,6 @@ class Decks extends React.Component{
   "__v": 0
 }]
 };
- console.log("test decks",testDecks);
- console.log("test decks.title",testDecks.title);
- console.log("test decks.cards",testDecks.cards);
 
     return(
       <div className = "decks-page">
