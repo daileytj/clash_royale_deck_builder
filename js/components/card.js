@@ -7,7 +7,7 @@ class Card extends React.Component {
   }
 
   render(props){
-    const{ card, image, cardName, idName, rarity, type, name, description, arena, elixerCost } = this.props;
+    const{ card, image, cardName, idName, rarity, type, name, description, arena, elixirCost } = this.props;
 
     return(
       <div className = "card">
@@ -18,8 +18,8 @@ class Card extends React.Component {
         <p className = "hidden name">{card.name}</p>
         <p className = "hidden description">{card.description}</p>
         <p className = "hidden arena">{card.arena}</p>
-        <p className = "hidden elixerCost">{card.elixerCost}</p>
-        <img src = {`http://www.clashapi.xyz/images/cards/${card.idName}.png`} alt = {card.description}/>
+        <p className = "hidden elixirCost">{card.elixirCost}</p>
+        <img className = "card-image" src = {`http://www.clashapi.xyz/images/cards/${card.idName}.png`} alt = {card.description}/>
       </div>
     )
   }

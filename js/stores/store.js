@@ -7,10 +7,12 @@ import thunk from 'redux-thunk';
 import rootReducer from '../reducers/index';
 
 import cards from '../data/cards';
+import decks from '../data/decks';
 
 // create an object for the default data
 const defaultState = {
-  cards
+  cards,
+  decks
 };
 
 const store = createStore(rootReducer, defaultState, applyMiddleware(thunk));

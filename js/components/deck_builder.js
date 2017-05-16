@@ -1,4 +1,4 @@
-import React from 'React';
+import React from 'react';
 import {connect} from 'react-redux';
 import * as actions from '../actions/index';
 
@@ -9,8 +9,8 @@ class DeckBuilder extends React.Component{
 
   render(){
     return(
-      <div>
-
+      <div className = "deck-builder-container">
+        I'm the deckbuilder.
       </div>
     )
   }

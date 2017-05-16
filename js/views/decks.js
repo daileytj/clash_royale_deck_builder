@@ -1,15 +1,13 @@
 import React from 'react';
 import {connect} from 'react-redux';
+import Deck from './deck';
 
 class Decks extends React.Component{
-  constructor(props){
-    super(props);
-  }
-
   render() {
     return(
       <div className = "decks-page">
-        <h1>Decks</h1>
+        <h2>Decks</h2>
+        {this.props.decks.map((deck, i) => <Deck {...this.props} key = {i} i = {i} deck = {deck}/>)}
       </div>
     )
   }

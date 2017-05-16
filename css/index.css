@@ -12,8 +12,12 @@ h1, h2, h3 {
   font-family: 'Roboto Slab', serif;
 }
 
+.hidden{
+  display:none;
+}
+
 .main {
-  
+
 }
 
 
@@ -24,6 +28,9 @@ h1, h2, h3 {
 
 
 /*-------------------------------------------------------------------------*/
+.hamburger-icon{
+  display:none;
+}
 
 nav {
   background-color: #488BF4;
@@ -154,16 +161,38 @@ nav:after {
 
 .home-page-content-wrapper{
   width:90%;
-  margin: 0 auto;
+  margin: 100px auto 20px auto;
+  overflow:hidden;
 }
 
 .home-page-content-wrapper h2{
   color:#FF9C00;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
 
 .home-page-content-wrapper p{
   margin-bottom: 10px;
+}
+
+.blue-prince{
+  width: 22.4%;
+  float: left;
+  margin-right: 30px;
+}
+
+.combo-button{
+  margin: 20px;
+}
+
+.blue-knight{
+  float: right;
+  width: 25%
+}
+
+.clearfix:before, .clearfix:after {
+  display:block;
+  content: "";
+  clear:both;
 }
 
 /*-------------------------------------------------------------------------*/
@@ -183,6 +212,36 @@ nav:after {
 
 /*-------------------------------------------------------------------------*/
 
+/*-------------------------------------------------------------------------*/
+
+
+/*-------------------------Available-Card-List-----------------------------*/
+
+
+/*-------------------------------------------------------------------------*/
+
+.available-card-list{
+    width: 90%;
+    padding-top: 150px;
+    margin: 0 auto;
+  }
+
+  .card{
+    display: block;
+    width: 25%;
+    float: left;
+  }
+
+  .card-image{
+    width: 100%;
+    padding: 10px;
+  }
+
+.available-card-list:after, .available-card-list:before{
+  clear:both;
+  display: block;
+  content: "";
+}
 
 /*-------------------------------------------------------------------------*/
 
@@ -210,4 +269,59 @@ footer img {
   height: 40px;
   width: auto;
   margin: 5px auto;
+}
+
+/*-------------------------------------------------------------------------*/
+
+
+/*------------------------------Media-Queries------------------------------*/
+
+
+/*-------------------------------------------------------------------------*/
+
+@media only screen and (max-width: 780px) {
+    .hamburger-icon{
+      display:inline-block;
+      height: 100px;
+      padding: 25px;
+      width: auto;
+      position: absolute;
+      top: 0px;
+      right: 0px;
+    }
+
+    .nav-wrapper{
+      float:none;
+      display:none;
+    }
+
+    .nav-wrapper li {
+      width: 100%;
+      padding: 0 20px;
+      text-align: center;
+      background-color: #488BF4;
+    }
+
+    .blue-knight{
+      width:30%;
+    }
+
+    .blue-prince{
+      width:40%;
+    }
+
+    .home-page-content-wrapper {
+    margin-top: 50px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+
+  .app-heading h1{
+    display:none;
+  }
+
+  .card{
+    width:50%;
+  }
 }

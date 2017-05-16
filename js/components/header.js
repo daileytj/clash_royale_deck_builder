@@ -16,6 +16,7 @@ class Header extends React.Component {
               <img className = "clash-logo" src = "https://vignette2.wikia.nocookie.net/clashroyale/images/6/6c/Clash_Royale_Logo.png/revision/latest?cb=20160104193540" alt = "Clash Royale Logo" />
               <h1> Deck Builder </h1>
             </Link></li>
+          <img className = "hamburger-icon" src = "http://liquidcc.com/wp-content/uploads/2015/02/crown.png"/>
             <ul className = "nav-wrapper" >
               <li><Link to = "/build" className = "nav-link" activeClassName = "active">BUILD</Link></li>
               <li><Link to = "/decks" className = "nav-link" activeClassName = "active">DECKS</Link></li>
