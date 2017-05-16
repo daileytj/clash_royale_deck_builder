@@ -12,7 +12,11 @@ class Home extends React.Component{
         <div className = "home-page-hero-img-parallax">
           <div className = "hero-text-wrapper">
             <h1 className = "hero-header">Build The Ultimate Clash Royale Deck</h1>
-            <button className = "hero-button">Build Now</button>
+            <button className = "hero-button">
+              <p>Build Now</p>
+              <i className="fa fa-cog fa-spin fa-1x fa-fw"></i>
+              <span className="sr-only">Build Now</span>
+              </button>
           </div>
         </div>
         <div className = "home-page-content-wrapper">
@@ -24,7 +28,11 @@ class Home extends React.Component{
           <h2>Out With It Then... How Do I Use This Thing?!</h2>
           <p>Easy now... it's quite simple.</p>
           <p>Simply click on any of the build buttons/links floating around the page...</p>
-          <button className = "hero-button home-page-content-button combo-button">Build Now</button>
+          <button className = "hero-button home-page-content-button combo-button">
+            <p>Build Now</p>
+            <i className="fa fa-cog fa-spin fa-1x fa-fw"></i>
+            <span className="sr-only">Build Now</span>
+          </button>
           <h2>How Do I Build My Deck?</h2>
           <p>Click on any available card in the card list and it will be added to your deck.</p>
           <p>Click on any card in your deck to remove it.</p>
