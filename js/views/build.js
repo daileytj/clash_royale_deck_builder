@@ -9,6 +9,8 @@ class Build extends React.Component{
     super(props);
   }
 
+
+
   render() {
     return(
       <div className = "build-page">
@@ -20,5 +22,8 @@ class Build extends React.Component{
     )
   }
 }
+// const mapStateToProps = state => ({
+//   state: state
+// });
 
 export default connect()(Build);

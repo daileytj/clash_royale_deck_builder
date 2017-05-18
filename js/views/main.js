@@ -2,6 +2,7 @@ import React from 'react';
 import {connect} from 'react-redux';
 import Header from '../components/header';
 import Footer from '../components/footer';
+import Build from './build';
 
 class Main extends React.Component{
   constructor(props){
@@ -18,5 +19,9 @@ class Main extends React.Component{
     )
   }
 }
+
+// const mapStateToProps = state => ({
+//   state: state
+// });
 
 export default connect()(Main);

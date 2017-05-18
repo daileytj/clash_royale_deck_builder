@@ -2,12 +2,17 @@ var path = require('path');
 var webpack = require('webpack');
 
 module.exports = {
-    entry: path.resolve(__dirname, 'js/index.js'),
+    entry: path.resolve(__dirname, './js/index'),
     output: {
-        path: path.resolve(__dirname, 'build/js'),
-        filename: 'index.js',
+        path: path.join(__dirname, 'dist'),
+        filename: 'bundle.js',
+        publicPath: '/static/'
     },
-    devtool: 'inline-source-map',
+    devtool: 'source-map',
+  plugins: [
+    new webpack.HotModuleReplacementPlugin(),
+    new webpack.NoErrorsPlugin()
+  ],
     module: {
       loaders: [
         {
@@ -17,11 +22,11 @@ module.exports = {
         },
         {
           test: /\.(gif|jpe?g|png|ico|jpg|jpeg)$/,
-          loader: 'url-loader?limit=2500000'
+          loader: 'url-loader?limit=25000'
         },
         {
           test: /\.(otf|eot|svg|ttf|woff|woff2).*$/,
-          loader: 'url-loader?limit=2500000'
+          loader: 'url-loader?limit=25000'
         }
       ]
     }

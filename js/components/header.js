@@ -1,12 +1,29 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { Link } from 'react-router';
+import * as actions from '../actions/index';
 // import clashRoyaleLogo from '../../images/clash-royale-logo.png';
 // <img src = {clashRoyaleLogo} alt = "Clash Royale Logo" />
 
 class Header extends React.Component {
     constructor(props){
       super(props);
+      this.headerClick = this.headerClick.bind(this);
+      this.sendStateToBuild = this.sendStateToBuild.bind(this);
+      this.sendStateToDecks = this.sendStateToDecks.bind(this);
+      this.sendStateToCards = this.sendStateToCards.bind(this);
+    }
+
+    sendStateToBuild(){
+        this.props.dispatch(actions.sendStateToBuild());
+    }
+
+    sendStateToDecks(){
+        this.props.dispatch(actions.sendStateToDecks());
+    }
+
+    sendStateToCards(){
+        this.props.dispatch(actions.sendStateToCards());
     }
 
     render() {
@@ -18,9 +35,9 @@ class Header extends React.Component {
             </Link></li>
           <img className = "hamburger-icon" src = "http://liquidcc.com/wp-content/uploads/2015/02/crown.png"/>
             <ul className = "nav-wrapper" >
-              <li><Link to = "/build" className = "nav-link" activeClassName = "active">BUILD</Link></li>
-              <li><Link to = "/decks" className = "nav-link" activeClassName = "active">DECKS</Link></li>
-              <li><Link to = "/cards" className = "nav-link" activeClassName = "active">ALL CARDS</Link></li>
+              <li><Link onClick = {this.sendStateToBuild} to = "/build" className = "nav-link" activeClassName = "active">BUILD</Link></li>
+              <li><Link onClick = {this.sendStateToDecks} to = "/decks" className = "nav-link" activeClassName = "active">DECKS</Link></li>
+              <li><Link onClick = {this.sendStateToCards} to = "/cards" className = "nav-link" activeClassName = "active">ALL CARDS</Link></li>
             </ul>
           </nav>
         );

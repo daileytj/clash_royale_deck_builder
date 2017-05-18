@@ -1,4 +1,5 @@
 const cards = (state = [], action) => {
+  // console.log('cards');
   return state;
 }
 

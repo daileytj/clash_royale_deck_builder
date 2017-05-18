@@ -12,7 +12,7 @@ import Deck from './views/deck';
 import AvailableCardList from './components/available_card_list';
 
 // Import React Router dependencies
-import { Router, Route, IndexRoute, browserHistory } from 'react-router';
+import { Router, Route, IndexRoute, hashHistory } from 'react-router';
 
 import { Provider } from 'react-redux';
 import store, { history } from './stores/store';

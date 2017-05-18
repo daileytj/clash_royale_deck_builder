@@ -29,3 +29,31 @@ export const getAllAvailableCards = cards => {
     cards
   }
 }
+
+export const getAllAvailableDecks = decks => {
+  return {
+    type: 'GET_ALL_AVAILABLE_DECKS',
+    decks
+  }
+}
+
+export const sendStateToBuild = state => {
+  return {
+    type: 'SEND_STATE_TO_BUILD',
+    state
+  }
+}
+
+export const sendStateToDecks = state => {
+  return {
+    type: 'SEND_STATE_TO_DECKS',
+    state
+  }
+}
+
+export const sendStateToCards = state => {
+  return {
+    type: 'SEND_STATE_TO_CARDS',
+    state
+  }
+}
