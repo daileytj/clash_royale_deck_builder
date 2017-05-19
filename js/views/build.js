@@ -9,21 +9,17 @@ class Build extends React.Component{
     super(props);
   }
 
-
-
   render() {
     return(
       <div className = "build-page">
         <div className = "deck-builder-and-options-container">
-          <DeckBuilder />
-          <DeckBuildOptions />
+          <DeckBuilder {...this.props} />
+          <DeckBuildOptions {...this.props} />
+          <AvailableCardList {...this.props} />
         </div>
       </div>
     )
   }
 }
-// const mapStateToProps = state => ({
-//   state: state
-// });
 
 export default connect()(Build);

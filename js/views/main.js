@@ -12,7 +12,7 @@ class Main extends React.Component{
   render() {
     return(
       <div className = "main">
-        <Header />
+        <Header {...this.props}/>
         {React.cloneElement(this.props.children, this.props)}
         <Footer />
       </div>
@@ -24,4 +24,4 @@ class Main extends React.Component{
 //   state: state
 // });
 
-export default connect()(Main);
+export default Main;

@@ -8,7 +8,6 @@ import * as actions from '../actions/index';
 class Header extends React.Component {
     constructor(props){
       super(props);
-      this.headerClick = this.headerClick.bind(this);
       this.sendStateToBuild = this.sendStateToBuild.bind(this);
       this.sendStateToDecks = this.sendStateToDecks.bind(this);
       this.sendStateToCards = this.sendStateToCards.bind(this);
@@ -25,6 +24,7 @@ class Header extends React.Component {
     sendStateToCards(){
         this.props.dispatch(actions.sendStateToCards());
     }
+
 
     render() {
       return (

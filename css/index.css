@@ -351,6 +351,12 @@ fieldset {
     display: inline;
 }
 
+.deck-builder-and-options-container .available-card-list{
+    width: 100%;
+    padding-top: 5px;
+    margin: 0 auto;
+}
+
 /*-------------------------------------------------------------------------*/
 
 
