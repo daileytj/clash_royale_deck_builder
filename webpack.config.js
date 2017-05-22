@@ -4,9 +4,8 @@ var webpack = require('webpack');
 module.exports = {
     entry: path.resolve(__dirname, 'js/index.js'),
     output: {
-        path: __dirname + '/dist',
-        publicPath: '/',
-        filename: 'bundle.js'
+        path: path.resolve(__dirname, 'build/js'),
+        filename: 'index.js',
     },
     devtool: 'inline-source-map',
     module: {
