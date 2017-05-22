@@ -4,8 +4,9 @@
   "description": "Create The Ultimate Clash Royale Deck",
   "main": "index.js",
   "scripts": {
-    "go": "node devServer.js",
-    "start": "http-server -c-1 build",
+    "go": "node devserver.js",
+    "whatStartUsedToBe": "http-server -c-1 build",
+    "start": "node devserver.js",
     "dev": "run-p watch serve",
     "test": "mocha --recursive --compilers js:babel-core/register",
     "build": "run-s build:*",
@@ -68,6 +69,7 @@
     "body-parser": "^1.17.1",
     "clashapi": "0.0.2",
     "cors": "^2.8.3",
+    "css-loader": "^0.28.2",
     "es6-promise": "^4.1.0",
     "express": "^4.15.2",
     "file-loader": "^0.11.1",
@@ -82,6 +84,7 @@
     "react-transform": "0.0.3",
     "redux": "^3.6.0",
     "redux-thunk": "^2.2.0",
+    "style-loader": "^0.18.0",
     "url-loader": "^0.5.8",
     "webpack-dev-middleware": "^1.10.2",
     "webpack-hot-middleware": "^2.18.0"
